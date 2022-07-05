@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jayanta Adhikary - Links</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.BIRDS({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color2: 0xc15de3,
+          wingSpan: 40.0,
+          separation: 100.0,
+          alignment: 77.0,
+          quantity: 2.0,
+          backgroundAlpha: 0.0,
+        });
+
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+          main.style.filter = "blur(0px)";
+        }, 500);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main>
+      <header>
+        <img src="./images/profile.jpg" />
+        <h1>@jayadky</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://www.jayantaadhikary.me">
+            <img src="./images/home.svg" alt="home" width="20" />
+            Official Website</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCscQ7D6cIMtvRZuVWOr8C3Q">
+            <img src="./images/youtube.svg" alt="youtube" width="20" />
+            Youtube</a
+          >
+        </li>
+        <li>
+          <a href="https://www.twitter.com/jayadky">
+            <img src="./images/twitter.svg" alt="twitter" width="20" />
+
+            Twitter</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/jayantaadhikary">
+            <img src="./images/github.svg" alt="github" width="20" />
+            Github</a
+          >
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
